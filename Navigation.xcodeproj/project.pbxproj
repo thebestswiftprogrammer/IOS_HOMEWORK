@@ -11,7 +11,12 @@
 		5A996BC72CC4056500E57469 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BC62CC4056500E57469 /* SceneDelegate.swift */; };
 		5A996BC92CC4056500E57469 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BC82CC4056500E57469 /* ViewController.swift */; };
 		5A996BCE2CC4056600E57469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A996BCD2CC4056600E57469 /* Assets.xcassets */; };
-		5A996BD12CC4056600E57469 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5A996BD02CC4056600E57469 /* Base */; };
+		5A996BDA2CC40AD700E57469 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BD92CC40AD700E57469 /* ProfileHeaderView.swift */; };
+		5A996BDC2CC40BB500E57469 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BDB2CC40BB500E57469 /* PostViewController.swift */; };
+		5A996BDE2CC40BD900E57469 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BDD2CC40BD900E57469 /* FeedViewController.swift */; };
+		5A996BE02CC40C1A00E57469 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BDF2CC40C1A00E57469 /* InfoViewController.swift */; };
+		5A996BE22CC40C3500E57469 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BE12CC40C3500E57469 /* AlertViewController.swift */; };
+		5A996BE42CC40CAA00E57469 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A996BE32CC40CAA00E57469 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +25,13 @@
 		5A996BC62CC4056500E57469 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5A996BC82CC4056500E57469 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A996BCD2CC4056600E57469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5A996BD02CC4056600E57469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A996BD22CC4056600E57469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A996BD92CC40AD700E57469 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		5A996BDB2CC40BB500E57469 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		5A996BDD2CC40BD900E57469 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		5A996BDF2CC40C1A00E57469 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5A996BE12CC40C3500E57469 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		5A996BE32CC40CAA00E57469 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 		5A996BB82CC4056500E57469 = {
 			isa = PBXGroup;
 			children = (
+				5A996BD82CC4059400E57469 /* Profile */,
 				5A996BC32CC4056500E57469 /* Navigation */,
 				5A996BC22CC4056500E57469 /* Products */,
 			);
@@ -54,12 +65,14 @@
 		5A996BC32CC4056500E57469 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				5A996BD82CC4059400E57469 /* Profile */,
-				5A996BC42CC4056500E57469 /* AppDelegate.swift */,
 				5A996BC62CC4056500E57469 /* SceneDelegate.swift */,
+				5A996BC42CC4056500E57469 /* AppDelegate.swift */,
 				5A996BC82CC4056500E57469 /* ViewController.swift */,
-				5A996BCD2CC4056600E57469 /* Assets.xcassets */,
-				5A996BCF2CC4056600E57469 /* LaunchScreen.storyboard */,
+				5A996BDB2CC40BB500E57469 /* PostViewController.swift */,
+				5A996BDD2CC40BD900E57469 /* FeedViewController.swift */,
+				5A996BE32CC40CAA00E57469 /* ProfileViewController.swift */,
+				5A996BDF2CC40C1A00E57469 /* InfoViewController.swift */,
+				5A996BE12CC40C3500E57469 /* AlertViewController.swift */,
 				5A996BD22CC4056600E57469 /* Info.plist */,
 			);
 			path = Navigation;
@@ -68,6 +81,8 @@
 		5A996BD82CC4059400E57469 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5A996BD92CC40AD700E57469 /* ProfileHeaderView.swift */,
+				5A996BCD2CC4056600E57469 /* Assets.xcassets */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -131,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A996BCE2CC4056600E57469 /* Assets.xcassets in Resources */,
-				5A996BD12CC4056600E57469 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,21 +159,16 @@
 				5A996BC92CC4056500E57469 /* ViewController.swift in Sources */,
 				5A996BC52CC4056500E57469 /* AppDelegate.swift in Sources */,
 				5A996BC72CC4056500E57469 /* SceneDelegate.swift in Sources */,
+				5A996BE22CC40C3500E57469 /* AlertViewController.swift in Sources */,
+				5A996BE02CC40C1A00E57469 /* InfoViewController.swift in Sources */,
+				5A996BDA2CC40AD700E57469 /* ProfileHeaderView.swift in Sources */,
+				5A996BE42CC40CAA00E57469 /* ProfileViewController.swift in Sources */,
+				5A996BDE2CC40BD900E57469 /* FeedViewController.swift in Sources */,
+				5A996BDC2CC40BB500E57469 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5A996BCF2CC4056600E57469 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A996BD02CC4056600E57469 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5A996BD32CC4056600E57469 /* Debug */ = {

@@ -1,8 +1,13 @@
-//
-//  AlertViewController.swift
-//  Navigation
-//
-//  Created by Виктория Вайнштейн on 19.10.2024.
-//
+import UIKit
 
-import Foundation
+struct Alert{
+    let title: String
+}
+
+class AlertController: UIAlertController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = .purple
+    }
+}
